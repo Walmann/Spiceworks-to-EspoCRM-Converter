@@ -8,10 +8,10 @@ This script is created by me for me, so there are some "me specific" things in h
 In other words, this script is not meant for widespread use. But if people are actually going to use it, open an issue and i will make it less me-specific.
 
 If you are looking to use this script, files of interest would be: 
-dep/Espo/createComments.py
-dep/Espo/createTickets.py
-dep/Espo/createUsers.py
-dep/Spiceworks/exportSW.py
+- dep/Espo/createComments.py
+- dep/Espo/createTickets.py
+- dep/Espo/createUsers.py
+- dep/Spiceworks/exportSW.py
 
 
 # TODO

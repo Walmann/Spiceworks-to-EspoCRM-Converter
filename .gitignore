@@ -1,0 +1,15 @@
+Userdata/SpiceworksSQLData/*
+Userdata/SpiceworksUploads/*
+Userdata/EspoCRMSQLDataExport/*
+EspoCRM/
+workingDir/
+Outputfiles/*
+DevFolder/*
+.venv/
+iZettleStrings.txt
+__pycache__
+Notes.md
+DEVFILE
+archive
+SWtoESPOCRM.code-workspace
+userSettingsMine.txt

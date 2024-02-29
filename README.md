@@ -78,4 +78,28 @@ dep/Spiceworks/exportSW.py
 
 5. All users have the PW set to "walmann". Change this manually. ( I may make this automatic in the future.)
 
-Default PW for all new users is "walmann"
+
+
+
+# Notes for me
+## EspoCRM SQL Locations:
+- Ticktets: case
+- User accounts: 
+
+## Links: 
+- Import export EspoCRM SQL: https://docs.espocrm.com/administration/backup-and-restore/
+
+## Commands:
+- Export EspoCRM SQL Database: ``mysqldump --user=espocrm --password=database_password --no-tablespaces espocrm > "dbExport.sql"``
+
+## SQL Notes:
+
+Note SQL:
+INSERT INTO `note` (`id`, `deleted`, `post`, `data`, `type`, `target_type`, `number`, `is_global`, `is_internal`, `created_at`, `modified_at`, `parent_id`, `parent_type`, related_id`, `related_type`, `created_by_id`, `modified_by_id`, `super_parent_id`, `super_parent_type`) VALUES
+('65ca145098b4c2e83', 0, 'Dette er en kommentar i Strøm feltet!', '{}', 'Post', NULL, 22, 0, 0, '2024-02-12 12:51:28', '2024-02-12 12:51:28', '65c5dd86eef86c00d', 'Case', NULL, NULL, '65c0bf44abf23e9cc', NULL, NULL, NULL),
+
+
+Ticket SQL: 
+ INSERT INTO `case` (`id`, `name`, `deleted`, `number`, `status`, `priority`, `type`, `description`, `created_at`, `modified_at`, `account_id`, `lead_id`, `contact_id`, `inbound_email_id`, `created_by_id`, `modified_by_id`, `assigned_user_id`, `i_zettle_i_d`, `faktura_nummer`) VALUES
+ ('65c0bf969a6746cb5', 'Test Ticket', 0, 1, 'Assigned', 'Normal', NULL, 'Test ticket for MySQL exportering', '2024-02-05 10:59:34', '2024-02-05 10:59:34', NULL, NULL, NULL, NULL, '65c0bf44abf23e9cc', NULL, '65c0bf717813611ea', NULL, NULL),
+    
